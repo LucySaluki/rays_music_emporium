@@ -3,12 +3,14 @@ package Products.Instruments;
 public abstract class Instrument {
     public String material;
     public String colour;
+    public InstrumentType type;
     public double boughtPrice;
     public double sellingPrice;
 
-    public Instrument(String material, String colour, double boughtPrice, double sellingPrice) {
+    public Instrument(String material, String colour, InstrumentType type, double boughtPrice, double sellingPrice) {
         this.material = material;
         this.colour = colour;
+        this.type = type;
         this.boughtPrice = boughtPrice;
         this.sellingPrice = sellingPrice;
     }
@@ -19,6 +21,10 @@ public abstract class Instrument {
 
     public String getColour() {
         return colour;
+    }
+
+    public InstrumentType getType() {
+        return type;
     }
 
     public double getBoughtPrice() {
