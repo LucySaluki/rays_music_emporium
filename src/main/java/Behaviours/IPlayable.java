@@ -1,5 +1,5 @@
 package Behaviours;
 
 public interface IPlayable {
-    String play();
+    public String play();
 }
