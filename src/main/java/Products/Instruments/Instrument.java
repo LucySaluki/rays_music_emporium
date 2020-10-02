@@ -28,8 +28,4 @@ public abstract class Instrument extends Product implements IPlayable {
 
     public abstract String play();
 
-    public double calculateMarkup(){
-        return this.sellingPrice-this.boughtPrice;
-    }
-
 }
