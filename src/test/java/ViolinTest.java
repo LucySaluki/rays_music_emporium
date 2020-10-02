@@ -47,4 +47,9 @@ public class ViolinTest {
         assertEquals("*SoundLikeCatBeingStrangled*",violin.play());
     }
 
+    @Test
+    public void hasMarkUpValue(){
+        assertEquals(50.00, violin.calculateMarkup(),0.01);
+    }
+
 }

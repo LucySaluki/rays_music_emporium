@@ -47,4 +47,8 @@ public class FluteTest {
         assertEquals("Toot",flute.play());
     }
 
+    @Test
+    public void hasMarkUpValue(){
+        assertEquals(25.00, flute.calculateMarkup(),0.01);
+    }
 }

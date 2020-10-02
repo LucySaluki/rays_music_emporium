@@ -47,4 +47,8 @@ public class DrumTest {
         assertEquals("Ba dum",drum.play());
     }
 
+    @Test
+    public void hasMarkUpValue(){
+        assertEquals(75.00, drum.calculateMarkup(),0.01);
+    }
 }

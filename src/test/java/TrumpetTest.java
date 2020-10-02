@@ -47,4 +47,8 @@ public class TrumpetTest {
         assertEquals("paarp",trumpet.play());
     }
 
+    @Test
+    public void hasMarkUpValue(){
+        assertEquals(100.00, trumpet.calculateMarkup(),0.01);
+    }
 }

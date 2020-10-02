@@ -46,4 +46,12 @@ public class CymbalTest {
 
     @Test
     public void canPlay(){
-        assertEquals("tsshhh",cymbal.play());}}
+        assertEquals("tsshhh",cymbal.play());}
+
+    @Test
+    public void hasMarkUpValue(){
+        assertEquals(25.00, cymbal.calculateMarkup(),0.01);
+    }
+}
+
+
