@@ -1,13 +1,15 @@
 package Products.Instruments;
 
-import Behaviours.IPlayable;
-
-public class Flute extends Instrument implements IPlayable {
+public class Flute extends Instrument {
     private int numberOfKeys;
 
-    public Flute(String material, String colour, InstrumentType type, double boughtPrice, double sellingPrice, int numberOfKeys) {
-        super(material, colour, type, boughtPrice, sellingPrice);
+    public Flute(String productCode, double boughtPrice, double sellingPrice, String material, String colour, InstrumentType type, int numberOfKeys) {
+        super(productCode, boughtPrice, sellingPrice, material, colour, type);
         this.numberOfKeys = numberOfKeys;
+    }
+
+    public int getNumberOfKeys() {
+        return numberOfKeys;
     }
 
     public String play() {

@@ -6,4 +6,5 @@ public enum InstrumentType {
     PERCUSSION,
     STRING,
     WIND
+
 }

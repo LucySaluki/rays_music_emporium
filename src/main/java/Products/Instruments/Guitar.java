@@ -1,12 +1,15 @@
 package Products.Instruments;
-import Behaviours.IPlayable;
 
-public class Guitar extends Instrument implements IPlayable {
+public class Guitar extends Instrument {
     private int numberOfStrings;
 
-    public Guitar(String material, String colour, InstrumentType type, double boughtPrice, double sellingPrice, int numberOfStrings) {
-        super(material, colour, type, boughtPrice, sellingPrice);
-        this.numberOfStrings=numberOfStrings;
+    public Guitar(String productCode, double boughtPrice, double sellingPrice, String material, String colour, InstrumentType type, int numberOfStrings) {
+        super(productCode, boughtPrice, sellingPrice, material, colour, type);
+        this.numberOfStrings = numberOfStrings;
+    }
+
+    public int getNumberOfStrings() {
+        return numberOfStrings;
     }
 
     public String play() {
