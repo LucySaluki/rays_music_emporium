@@ -36,4 +36,10 @@ public abstract class Instrument {
     public void setSellingPrice(double sellingPrice) {
         this.sellingPrice = sellingPrice;
     }
+
+    public abstract String play();
+
+    public double calculateMarkup(){
+        return this.sellingPrice-this.boughtPrice;
+    }
 }
