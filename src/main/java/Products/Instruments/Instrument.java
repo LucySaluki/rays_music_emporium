@@ -26,6 +26,5 @@ public abstract class Instrument extends Product implements IPlayable {
         return type;
     }
 
-    public abstract String play();
 
 }

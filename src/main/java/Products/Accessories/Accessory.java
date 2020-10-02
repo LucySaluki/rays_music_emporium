@@ -1,5 +1,4 @@
 package Products.Accessories;
-
 import Products.Product;
 
 public class Accessory extends Product {
